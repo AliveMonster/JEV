@@ -1,0 +1,52 @@
+{
+  "model": "laya:en",
+  "state": {
+    "customerContext": {
+      "customerId": "CUST-0001",
+      "averageTransactionAmount": 12000,
+      "transactionCount24h": 3,
+      "transactionCount7d": 12,
+      "usualLocations": [
+        "Bangalore"
+      ],
+      "usualDeviceIds": [
+        "DEVICE-OLD-001"
+      ],
+      "usualMerchantCategories": [
+        "GROCERY",
+        "FOOD"
+      ]
+    },
+    "transaction": {
+      "transactionId": "SMOKE-0001",
+      "timestamp": "2026-09-30T10:30:00",
+      "amount": 75000,
+      "currency": "INR",
+      "transactionType": "UPI",
+      "merchantCategory": "ELECTRONICS",
+      "merchantId": "MERCHANT-999",
+      "location": "Mumbai",
+      "deviceId": "DEVICE-NEW-999",
+      "newDevice": true,
+      "newBeneficiary": true,
+      "failedAttempts24h": 5,
+      "transactionCount24h": 8
+    }
+  },
+  "questions": {
+    "fraudRisk": {
+      "type": "choice",
+      "instructions": "What is the fraud risk of this transaction based only on the supplied customer context and transaction?",
+      "criteria": {
+        "LOW": "Consistent with normal customer behavior; no material fraud concern",
+        "MEDIUM": "Some suspicious or anomalous characteristics; needs caution",
+        "HIGH": "Strong evidence of potential fraud or account compromise"
+      }
+    },
+    "escalation": {
+      "type": "noul",
+      "instructions": "Should this transaction be escalated for further fraud investigation?",
+      "threshold": 0.5
+    }
+  }
+}

@@ -1,0 +1,218 @@
+[
+  {
+    "name": "NORMAL",
+    "transaction": {
+      "transactionId": "LAYA-TEST-001",
+      "timestamp": "2026-10-02T10:30:00",
+      "amount": 2500,
+      "currency": "INR",
+      "transactionType": "UPI",
+      "merchantCategory": "GROCERY",
+      "merchantId": "MERCHANT-001",
+      "location": "Bangalore",
+      "deviceId": "DEVICE-OLD-001",
+      "newDevice": false,
+      "newBeneficiary": false,
+      "failedAttempts24h": 0,
+      "transactionCount24h": 2
+    },
+    "customerContext": {
+      "customerId": "CUST-0001",
+      "averageTransactionAmount": 12000,
+      "transactionCount24h": 3,
+      "transactionCount7d": 12,
+      "usualLocations": ["Bangalore"],
+      "usualDeviceIds": ["DEVICE-OLD-001"],
+      "usualMerchantCategories": ["GROCERY", "FOOD"]
+    }
+  },
+  {
+    "name": "HIGH_AMOUNT",
+    "transaction": {
+      "transactionId": "LAYA-TEST-002",
+      "timestamp": "2026-10-02T10:30:00",
+      "amount": 75000,
+      "currency": "INR",
+      "transactionType": "UPI",
+      "merchantCategory": "ELECTRONICS",
+      "merchantId": "MERCHANT-999",
+      "location": "Bangalore",
+      "deviceId": "DEVICE-OLD-001",
+      "newDevice": false,
+      "newBeneficiary": false,
+      "failedAttempts24h": 0,
+      "transactionCount24h": 2
+    },
+    "customerContext": {
+      "customerId": "CUST-0001",
+      "averageTransactionAmount": 12000,
+      "transactionCount24h": 3,
+      "transactionCount7d": 12,
+      "usualLocations": ["Bangalore"],
+      "usualDeviceIds": ["DEVICE-OLD-001"],
+      "usualMerchantCategories": ["GROCERY", "FOOD"]
+    }
+  },
+  {
+    "name": "NEW_DEVICE",
+    "transaction": {
+      "transactionId": "LAYA-TEST-003",
+      "timestamp": "2026-10-02T10:30:00",
+      "amount": 5000,
+      "currency": "INR",
+      "transactionType": "UPI",
+      "merchantCategory": "GROCERY",
+      "merchantId": "MERCHANT-001",
+      "location": "Bangalore",
+      "deviceId": "DEVICE-NEW-999",
+      "newDevice": true,
+      "newBeneficiary": false,
+      "failedAttempts24h": 0,
+      "transactionCount24h": 2
+    },
+    "customerContext": {
+      "customerId": "CUST-0001",
+      "averageTransactionAmount": 12000,
+      "transactionCount24h": 3,
+      "transactionCount7d": 12,
+      "usualLocations": ["Bangalore"],
+      "usualDeviceIds": ["DEVICE-OLD-001"],
+      "usualMerchantCategories": ["GROCERY", "FOOD"]
+    }
+  },
+  {
+    "name": "NEW_BENEFICIARY",
+    "transaction": {
+      "transactionId": "LAYA-TEST-004",
+      "timestamp": "2026-10-02T10:30:00",
+      "amount": 5000,
+      "currency": "INR",
+      "transactionType": "UPI",
+      "merchantCategory": "GROCERY",
+      "merchantId": "MERCHANT-002",
+      "location": "Bangalore",
+      "deviceId": "DEVICE-OLD-001",
+      "newDevice": false,
+      "newBeneficiary": true,
+      "failedAttempts24h": 0,
+      "transactionCount24h": 2
+    },
+    "customerContext": {
+      "customerId": "CUST-0001",
+      "averageTransactionAmount": 12000,
+      "transactionCount24h": 3,
+      "transactionCount7d": 12,
+      "usualLocations": ["Bangalore"],
+      "usualDeviceIds": ["DEVICE-OLD-001"],
+      "usualMerchantCategories": ["GROCERY", "FOOD"]
+    }
+  },
+  {
+    "name": "NEW_LOCATION",
+    "transaction": {
+      "transactionId": "LAYA-TEST-005",
+      "timestamp": "2026-10-02T10:30:00",
+      "amount": 5000,
+      "currency": "INR",
+      "transactionType": "UPI",
+      "merchantCategory": "GROCERY",
+      "merchantId": "MERCHANT-001",
+      "location": "Delhi",
+      "deviceId": "DEVICE-OLD-001",
+      "newDevice": false,
+      "newBeneficiary": false,
+      "failedAttempts24h": 0,
+      "transactionCount24h": 2
+    },
+    "customerContext": {
+      "customerId": "CUST-0001",
+      "averageTransactionAmount": 12000,
+      "transactionCount24h": 3,
+      "transactionCount7d": 12,
+      "usualLocations": ["Bangalore"],
+      "usualDeviceIds": ["DEVICE-OLD-001"],
+      "usualMerchantCategories": ["GROCERY", "FOOD"]
+    }
+  },
+  {
+    "name": "AUTH_ATTACK",
+    "transaction": {
+      "transactionId": "LAYA-TEST-006",
+      "timestamp": "2026-10-02T10:30:00",
+      "amount": 5000,
+      "currency": "INR",
+      "transactionType": "UPI",
+      "merchantCategory": "GROCERY",
+      "merchantId": "MERCHANT-001",
+      "location": "Bangalore",
+      "deviceId": "DEVICE-OLD-001",
+      "newDevice": false,
+      "newBeneficiary": false,
+      "failedAttempts24h": 8,
+      "transactionCount24h": 2
+    },
+    "customerContext": {
+      "customerId": "CUST-0001",
+      "averageTransactionAmount": 12000,
+      "transactionCount24h": 3,
+      "transactionCount7d": 12,
+      "usualLocations": ["Bangalore"],
+      "usualDeviceIds": ["DEVICE-OLD-001"],
+      "usualMerchantCategories": ["GROCERY", "FOOD"]
+    }
+  },
+  {
+    "name": "VELOCITY",
+    "transaction": {
+      "transactionId": "LAYA-TEST-007",
+      "timestamp": "2026-10-02T10:30:00",
+      "amount": 5000,
+      "currency": "INR",
+      "transactionType": "UPI",
+      "merchantCategory": "GROCERY",
+      "merchantId": "MERCHANT-001",
+      "location": "Bangalore",
+      "deviceId": "DEVICE-OLD-001",
+      "newDevice": false,
+      "newBeneficiary": false,
+      "failedAttempts24h": 0,
+      "transactionCount24h": 45
+    },
+    "customerContext": {
+      "customerId": "CUST-0001",
+      "averageTransactionAmount": 12000,
+      "transactionCount24h": 3,
+      "transactionCount7d": 12,
+      "usualLocations": ["Bangalore"],
+      "usualDeviceIds": ["DEVICE-OLD-001"],
+      "usualMerchantCategories": ["GROCERY", "FOOD"]
+    }
+  },
+  {
+    "name": "COMBINED",
+    "transaction": {
+      "transactionId": "LAYA-TEST-008",
+      "timestamp": "2026-10-02T10:30:00",
+      "amount": 75000,
+      "currency": "INR",
+      "transactionType": "UPI",
+      "merchantCategory": "ELECTRONICS",
+      "merchantId": "MERCHANT-999",
+      "location": "Delhi",
+      "deviceId": "DEVICE-NEW-999",
+      "newDevice": true,
+      "newBeneficiary": true,
+      "failedAttempts24h": 8,
+      "transactionCount24h": 45
+    },
+    "customerContext": {
+      "customerId": "CUST-0001",
+      "averageTransactionAmount": 12000,
+      "transactionCount24h": 3,
+      "transactionCount7d": 12,
+      "usualLocations": ["Bangalore"],
+      "usualDeviceIds": ["DEVICE-OLD-001"],
+      "usualMerchantCategories": ["GROCERY", "FOOD"]
+    }
+  }
+]

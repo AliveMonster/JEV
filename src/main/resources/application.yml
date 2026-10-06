@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: fraud-risk-poc
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+
+server:
+  port: 8080
+
+fraud:
+  ollama:
+    base-url: ${OLLAMA_BASE_URL:http://localhost:11434}
+    model: ${OLLAMA_MODEL:qwen3:1.7b}
+
+  system-one:
+    base-url: ${SYSTEM_ONE_BASE_URL:http://localhost:11435}
+    model: ${SYSTEM_ONE_MODEL:laya:en}
+    confidence-threshold: ${SYSTEM_ONE_CONFIDENCE_THRESHOLD:0.70}
+
+  jev:
+    base-url: ${JEV_BASE_URL:https://openrouter.ai}
+    api-key: ${OPENROUTER_API_KEY}
+    model: ${JEV_MODEL:typesafe/jev-1.13}
+    confidence-threshold: ${JEV_CONFIDENCE_THRESHOLD:0.90}
+
+  benchmark:
+    dataset: /datasets/fraud-dataset.json
+    limit: ${BENCHMARK_LIMIT:100}
+    fail-fast: true

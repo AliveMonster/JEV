@@ -1,0 +1,26 @@
+{
+  "transaction": {
+    "transactionId": "LAYA-SIMPLE-NORMAL-001",
+    "timestamp": "2026-10-02T10:30:00",
+    "amount": 2500,
+    "currency": "INR",
+    "transactionType": "UPI",
+    "merchantCategory": "GROCERY",
+    "merchantId": "MERCHANT-001",
+    "location": "Bangalore",
+    "deviceId": "DEVICE-OLD-001",
+    "newDevice": false,
+    "newBeneficiary": false,
+    "failedAttempts24h": 0,
+    "transactionCount24h": 2
+  },
+  "customerContext": {
+    "customerId": "CUST-0001",
+    "averageTransactionAmount": 12000,
+    "transactionCount24h": 3,
+    "transactionCount7d": 12,
+    "usualLocations": ["Bangalore"],
+    "usualDeviceIds": ["DEVICE-OLD-001"],
+    "usualMerchantCategories": ["GROCERY", "FOOD"]
+  }
+}

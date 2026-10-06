@@ -1,0 +1,27 @@
+{
+  "transaction": {
+    "transactionId": "SMOKE-0001",
+    "customerId": "CUST-0001",
+    "timestamp": "2026-09-15T10:30:00",
+    "amount": 75000.00,
+    "currency": "INR",
+    "transactionType": "UPI",
+    "merchantCategory": "ELECTRONICS",
+    "merchantId": "MERCHANT-0099",
+    "location": "Mumbai",
+    "deviceId": "DEVICE-FRAUD-9999",
+    "newDevice": true,
+    "newBeneficiary": true,
+    "failedAttempts24h": 5,
+    "transactionCount24h": 8
+  },
+  "customerContext": {
+    "customerId": "CUST-0001",
+    "averageTransactionAmount": 1200.00,
+    "transactionCount24h": 3,
+    "transactionCount7d": 15,
+    "usualLocations": ["Bangalore"],
+    "usualDeviceIds": ["DEVICE-0001"],
+    "usualMerchantCategories": ["GROCERY", "FUEL", "RESTAURANT"]
+  }
+}
